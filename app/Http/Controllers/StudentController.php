@@ -15,6 +15,9 @@ class StudentController extends Controller
     public function index()
     {
         //
+        $a= "this is the data that is you finding in here and there for now to the next process";
+        echo $a;
+        // return response()->json($a);
     }
 
     /**
