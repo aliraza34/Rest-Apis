@@ -14,9 +14,9 @@ class StudentController extends Controller
      */
     public function index()
     {
-        //
-        $a= "this is the data that is you finding in here and there for now to the next process";
-        echo $a;
+        // dd('wokriing');
+      $data= Student::all();
+      return $data;
         // return response()->json($a);
     }
 
@@ -28,6 +28,7 @@ class StudentController extends Controller
     public function create()
     {
         //
+        dd('create woking');
     }
 
     /**
@@ -39,6 +40,7 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         //
+        dd("yes its also working");
     }
 
     /**
@@ -49,7 +51,10 @@ class StudentController extends Controller
      */
     public function show(Student $student)
     {
-        //
+        // dd('single Student show');    
+        $data=Student::find($student);
+        return response()->json(['data'=>$data, 'status'=>200]);
+    
     }
 
     /**
@@ -61,6 +66,7 @@ class StudentController extends Controller
     public function edit(Student $student)
     {
         //
+        dd('single Student show');
     }
 
     /**
@@ -73,6 +79,7 @@ class StudentController extends Controller
     public function update(Request $request, Student $student)
     {
         //
+        dd("u[pdwerreyjhgj");
     }
 
     /**
@@ -84,5 +91,6 @@ class StudentController extends Controller
     public function destroy(Student $student)
     {
         //
+        dd('single destroy Student show');
     }
 }
