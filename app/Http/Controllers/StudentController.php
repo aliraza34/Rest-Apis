@@ -78,7 +78,7 @@ class StudentController extends Controller
      */
     public function update(Request $request, Student $student)
     {
-        dd("u[pdwerreyjhgj");
+        dd("you are in update controller");
     }
 
     /**
