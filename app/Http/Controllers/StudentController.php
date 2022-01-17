@@ -90,7 +90,6 @@ class StudentController extends Controller
      */
     public function destroy(Student $student)
     {
-        //
         dd('single destroy Student show');
     }
 }
